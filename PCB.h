@@ -1,4 +1,4 @@
-/** Pins uused */
+/** Pins used */
 const uint8_t pinLancOut = 12; // inverted
 const uint8_t pinLancIn  = 11;
 
