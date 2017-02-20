@@ -17,16 +17,7 @@ CANON calls their LANC compatible port "REMOTE".
 
 */
 #include "Trace.h"
-
-/** Pins uused */
-const uint8_t pinLancOut = 10; // inverted
-const uint8_t pinLancIn  = 11;
-const uint8_t pinRecButton = 6;
-const uint8_t pinZoomOutButton = 2;
-const uint8_t pinZoomInButton = 4;
-const uint8_t pinFocusNearButton = 5;
-const uint8_t pinFocusFarButton = 3;
-
+#include "PCB.h"
 /** LANC Timings */
 
 /** Duration of one LANC bit in microseconds. */
@@ -79,8 +70,6 @@ uint8_t FOCUS_NEAR[] = {0x28, 0x47};
 //uint8_t POWER_OFF[] = {0x18, 0x5E};
 //uint8_t POWER_OFF2[] = {0x18, 0x2A}; // Turns the XF300 off and then on again
 //uint8_t POWER_SAVE[] = {0x18, 0x6C}; // Didn't work
-
-
 
 void setup() 
 {
